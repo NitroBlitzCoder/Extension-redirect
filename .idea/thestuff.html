@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,16 +8,67 @@
     <title>Quick Link Logos</title>
 </head>
 <body>
-<div class="logo-container">
-    <a href="https://www.google.com" target="_blank">
-        <img src="images/logo1.png" alt="Google" class="logo">
+<div class="tab-container">
+    <div class="tab" id="watch-tab">Watch</div>
+    <div class="tab" id="shopping-tab">Shopping</div>
+    <div class="tab" id="work-tab">Work</div>
+</div>
+
+<div class="logo-container" id="watch-logos">
+    <a href="https://www.youtube.com" target="_blank">
+        <img src="images/youtube.png" alt="YouTube" class="logo">
     </a>
-    <a href="https://www.facebook.com" target="_blank">
-        <img src="images/logo2.png" alt="Facebook" class="logo">
+    <a href="https://www.netflix.com" target="_blank">
+        <img src="images/netflix.png" alt="Netflix" class="logo">
     </a>
-    <a href="https://www.twitter.com" target="_blank">
-        <img src="images/logo3.png" alt="Twitter" class="logo">
+    <a href="https://www.primevideo.com" target="_blank">
+        <img src="images/primevideo.png" alt="Prime Video" class="logo">
     </a>
 </div>
+
+<div class="logo-container" id="shopping-logos" style="display:none;">
+    <a href="https://www.amazon.com" target="_blank">
+        <img src="images/amazon.png" alt="Amazon" class="logo">
+    </a>
+    <a href="https://www.ebay.com" target="_blank">
+        <img src="images/ebay.png" alt="eBay" class="logo">
+    </a>
+</div>
+
+<div class="logo-container" id="work-logos" style="display:none;">
+    <a href="https://www.notion.so" target="_blank">
+        <img src="images/notion.png" alt="Notion" class="logo">
+    </a>
+    <a href="https://classroom.google.com" target="_blank">
+        <img src="images/googleclassroom.png" alt="Google Classroom" class="logo">
+    </a>
+    <a href="https://github.com" target="_blank">
+        <img src="images/github.png" alt="GitHub" class="logo">
+    </a>
+    <a href="https://genesis.com" target="_blank">
+        <img src="images/genesis.png" alt="Genesis" class="logo">
+    </a>
+</div>
+
+<script>
+    // JavaScript to handle tab switching
+    document.getElementById('watch-tab').addEventListener('click', function() {
+        document.getElementById('watch-logos').style.display = 'block';
+        document.getElementById('shopping-logos').style.display = 'none';
+        document.getElementById('work-logos').style.display = 'none';
+    });
+
+    document.getElementById('shopping-tab').addEventListener('click', function() {
+        document.getElementById('watch-logos').style.display = 'none';
+        document.getElementById('shopping-logos').style.display = 'block';
+        document.getElementById('work-logos').style.display = 'none';
+    });
+
+    document.getElementById('work-tab').addEventListener('click', function() {
+        document.getElementById('watch-logos').style.display = 'none';
+        document.getElementById('shopping-logos').style.display = 'none';
+        document.getElementById('work-logos').style.display = 'block';
+    });
+</script>
 </body>
 </html>
