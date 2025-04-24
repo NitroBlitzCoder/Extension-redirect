@@ -6,10 +6,5 @@
   "action": {
     "default_popup": "thestuff.html",
     "default_icon": "missionred.png"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/NitroBlitzCoder/Extension-redirect.git"
-  },
-  "private": true
+  }
 }
