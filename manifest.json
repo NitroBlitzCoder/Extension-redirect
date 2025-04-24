@@ -1,14 +1,11 @@
 {
   "name": "extension-redirect",
-  "version": "1.0.0",
-  "description": "",
-  "main": "rawr.js",
+  "description": "The Works",
+  "version": "1.0",
+  "manifest_version": 3,
   "action": {
     "default_popup": "thestuff.html",
     "default_icon": "missionred.png"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
