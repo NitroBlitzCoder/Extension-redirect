@@ -1,20 +1,21 @@
 {
   "name": "extension-redirect",
-  "description": "The Works",
+  "description": "Navigate to your favorite websites with a click on their logos!",
   "version": "1.0",
   "manifest_version": 3,
   "action": {
     "default_popup": "thestuff.html",
-    "default_icon": "missionred.png"
-  },
-  "description": "Navigate to your favorite websites with a click on their logos!",
-  "action": {
-    "default_popup": "thestuff.html",
     "default_icon": {
-      "16": "images/logo1.png",
-      "48": "images/logo2.png",
-      "128": "images/logo3.png"
+      "16": "missionred.png",
+      "48": "missionred.png",
+      "128": "missionred.png"
     }
   },
+  "icons": {
+    "16": "missionred.png",
+    "48": "missionred.png",
+    "128": "missionred.png"
+  },
+
   "permissions": []
 }
