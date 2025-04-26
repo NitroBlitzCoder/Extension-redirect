@@ -54,7 +54,7 @@ body {
 .logo:hover {
     transform: scale(1.05);
 }
-
+#watch-logos,
 #shopping-logos,
 #work-logos {
     display: none;
